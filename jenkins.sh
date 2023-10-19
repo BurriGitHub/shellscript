@@ -12,7 +12,7 @@ else
 echo "Updating yum is success"
 fi
 wget -O /etc/yum.repos.d/jenkins.repo \ 
-    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+        https://pkg.jenkins.io/redhat-stable/jenkins.repo
 if [ $? -ne 0 ]; then
 echo "Adding jenkins repo is failure"
 exit 1
