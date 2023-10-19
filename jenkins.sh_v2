@@ -15,7 +15,9 @@ echo "you need to be root user to execute this script"
 exit 1
 fi
 yum update -y
+
 VALIDATE $? "Updating YUM"
+
 wget -O /etc/yum.repos.d/jenkins.repo \ 
         https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
